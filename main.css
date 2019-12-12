@@ -1,0 +1,531 @@
+/* General--------------------------------------------------------------------------------------------------*/
+html *
+{
+   font-size: 1em;
+   font-family: Verdana, Geneva, sans-serif;
+}
+
+body {
+  background-color:azure;
+}
+
+footer {
+  display: inline;
+  font-size: 0.6em;
+  
+}
+
+.Page_Title {
+    font-size: 3em;
+    font-weight:bold;
+    
+}
+
+.Nav_List {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.Nav_List a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.Nav_List a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.Nav_List a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Index----------------------------------------------------------------------------------------------------*/
+
+
+
+
+.Index_Portrtait {
+  float: left;
+  width: 15%;
+  padding: 15px;
+}
+
+.Text_Section {
+    padding-left: 1em;
+    padding-right: 1em;
+    
+}
+
+
+
+.Quote{
+  
+    font-size:24px;
+    display:block;
+    width:150px;
+    float:right;
+    padding: 1em;
+
+}
+
+
+/* rozvrh---------------------------------------------------------------------------------------------------*/
+
+.tg  {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+.tg td{
+    font-family:Arial, sans-serif;
+    font-size:14px;
+    padding:11px 19px;
+    border-style:solid;
+    border-width:1px;
+    overflow:hidden;
+    word-break:normal;
+    border-color:black;
+}
+
+.tg th{
+    font-family:Arial, sans-serif;
+    font-size:14px;font-weight:normal;
+    padding:11px 19px;border-style:solid;
+    border-width:1px;
+    overflow:hidden;
+    word-break:normal;
+    border-color:black;
+}
+
+.tg .Rozvrh_Semi{
+    font-weight:bold;
+    background-color:#fffc9e;
+    border-color:inherit;
+    text-align:left;
+    vertical-align:top
+}
+
+.tg .Rozvrh_Info{
+    font-weight:bold;
+    border-color:inherit;
+    text-align:left;
+    vertical-align:top
+}
+
+.tg .Rozvrh_Empty{
+    border-color:inherit;
+    text-align:left;
+    vertical-align:top
+}
+.tg .Rozvrh_Lect{
+    font-weight:bold;
+    background-color:#9aff99;
+    border-color:inherit;
+    text-align:left;
+    vertical-align:top
+}
+
+.tg .Rozvrh_PE{
+    font-weight:bold;
+    background-color:#96fffb;
+    border-color:inherit;
+    text-align:left;
+    vertical-align:top
+}
+
+
+
+/*Zivotopis------------------------------------------------------------------------------------------------*/
+
+
+
+
+.Img_Jeff {
+  float: left;
+  width: 100%;
+  padding: 15px;
+}
+
+h3{
+    font-size: 30px;
+    padding: 5px;
+}
+
+h4{
+    font-size: 20px;
+    padding: 5px;
+}
+
+.row {
+  display: flex;
+}
+
+.column1 {
+    display: block;
+    flex: 0 0 20em;
+    background-color: powderblue;
+}
+
+.column2 {
+    flex: auto;
+    padding: 40px;
+    
+}
+
+.Basic_Info {
+    clear: both;
+    font-weight: bold;
+    
+    color: black;
+    padding-left: 15px;
+    
+    
+}
+
+.List_Item{
+    color: black;
+    
+    
+    
+}
+
+/*Motherboard------------------------------------------------------------------------------------------------*/
+#mapaMarkers{
+    position:relative;
+}
+
+#mapa{
+    position:relative;
+    z-index:1;
+}
+.marker{
+    width:5em;
+    z-index:2;
+}
+#marker1{
+    position:absolute;
+    left:380px;
+    top:400px;
+}
+#marker2{
+    position:absolute;
+    left:380px;
+    top:230px;
+}
+#marker3{
+    position:absolute;
+    left:380px;
+    top:830px;
+}
+#marker4{
+    position:absolute;
+    left:700px;
+    top:500px;
+}
+
+#marker5{
+    position:absolute;
+    left:100px;
+    top:430px;
+}
+
+div.tooltip span {
+    display:none;
+    z-index: -1;
+}
+div.tooltip:hover span {
+    display:block;
+    position: absolute;
+    top: -5px;
+    left: 30px;
+    background: #333;
+    color: #fff;
+
+    z-index: 3;
+}
+
+.Tooltip_img {
+    width: 250px;
+    padding-top: 1em;
+    
+}
+
+
+.Motherboard_Image {
+    display: block;
+    padding-left: 6em;
+    width: 800px;
+    
+}
+
+.Tooltip_Span {
+    padding: 1em;
+}
+
+.Tooltip_Title {
+    font-size: 24px;
+    font-weight:bold;
+    display: block;
+    
+}
+
+
+
+
+
+/*Form------------------------------------------------------------------------------*/
+
+#ineText
+{
+    display: none;
+    width: 15em;
+}
+
+#ine:checked ~ #ineText
+{
+    display: inline-block;
+}
+
+.formRadio
+{
+    display: none;
+    display: block;
+    
+}
+
+.form-style {
+    max-width: 500px;
+    background: powderblue;
+    padding: 10px 20px 10px 20px;
+    font: 13px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #666;
+    border: none;
+    border-radius: 5px;
+}
+.form-style h1 {
+    padding: 10px 10px 10px 40px;
+    display: block;
+    margin: -10px -30px 30px -30px;
+    font-size: 23px;
+}
+
+.form-style input[type="text"], .form-style input[type="number"], .form-style textarea, .form-style select {
+    color: #524;
+    height: 25px;
+    line-height:15px;
+    margin-bottom: 16px;
+    margin-right: 6px;
+    margin-top: 2px;
+    padding: 5px 0px 5px 5px;
+    width: auto;
+    border-radius: 2px;
+}
+
+.form-style input[type="date"] {
+    color: #524;
+    height: 25px;
+    line-height:15px;
+    margin-bottom: 16px;
+    margin-right: 6px;
+    margin-top: 2px;
+    padding: 5px 0px 5px 5px;
+    width: 40%;
+    border-radius: 2px;
+}
+
+.form-style input[type="email"] {
+    color: #500;
+    height: 25px;
+    line-height:15px;
+    margin-bottom: 16px;
+    margin-right: 6px;
+    margin-top: 2px;
+    padding: 5px 0px 5px 5px;
+    width: 40%;
+    border-radius: 2px;
+    
+}
+.form-style select {
+    width: 50%;
+    height: 35px;
+    color: #524;
+    line-height: 25px;
+}
+.form-style textarea{
+    height:100px;
+    padding: 5px 0px 0px 5px;
+    width: 50%;
+}
+
+.form-style .button {
+    background: #666;
+    border: none;
+    padding: 10px 25px 10px 25px;
+    color: #333;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.form-style .button:hover {
+    color: #334;
+    background-color: #555;
+}
+
+.Form_Item {
+    display: block;
+}
+
+.Form_Item_Input {
+    float: left;
+    width: 30%;
+    text-align: right;
+    padding-right: 10px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.Form_Item_Input_Column {
+    float: left;
+    width: 30%;
+    text-align: left;
+    padding-right: 10px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+
+
+
+/*Galeria---------------------------------------------------------------------------*/
+
+#lightboxVrstva {
+    display: none;
+    position: absolute;
+    padding-top: 45px;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.lightboxContent {
+    position: relative;
+    background-color: white;
+    margin: auto;
+    padding: 0;
+    width: 70%;
+    max-width: 1080px;
+    z-index: 10;
+}
+.Big_Image {
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#podklad {
+    display: none;
+    position: absolute;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.Slides {
+    display: none;
+}
+
+.prev, .next, .play, .pause {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 10px;
+    margin-top: -50px;
+    font-size: 30px;
+    color: white;
+    
+}
+
+.next {
+    right: 0;
+}
+
+.next, .prev {
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 60px;
+}
+
+.play {
+    top: 99%;
+    left: 85%;
+}
+
+.pause {
+    left: 90%;
+    top: 99%;
+}
+
+.CommentContainer, .TitleContainer {
+    text-align: center;
+    background-color: black;
+    padding: 2px 80px;
+    color: white;
+}
+
+.TitleContainer { 
+    font-size: 1.5em;
+    font-weight:bold;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.row>.column {
+    padding: 20px 20px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+    width: 25%;
+}
+
+
+
+
+
+/*-------------------D3--------------------------------------------------------*/
+svg {
+    font: 10px sans-serif;
+    fill: none;
+}
+
+.line {
+    stroke: #000;
+    stroke-width: 1.5px;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #bdc3c7;
+    shape-rendering: crispEdges;
+}
+
+/*---------------OSM Maps-------------------------------------------------------*/
+
+#mapid { height: 180px; }
